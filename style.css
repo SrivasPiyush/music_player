@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body{
+    background-image: radial-gradient(#0f0c29, #302b63, #24243e);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Oswald', sans-serif;
+    
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-size: 1.1rem;
+}
+
+nav ul li{
+    padding-left: 1.2em;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.logo img{
+    width: 1.5em;
+}
+
+.container{
+    min-height: 56vh;
+    width: 100%;
+    font-family: 'Lobster', cursive;
+    display: flex;
+    margin: 1em auto;
+    width: 80%;
+    border-radius: 25px;
+    padding: 12px;
+    color: white;
+    background: url(bg8.jpg) no-repeat center center/cover;
+    box-shadow: rgba(0, 0, 0, 0.845) 0px 54px 55px, rgba(0, 0, 0, 0.559) 0px -12px 30px, rgba(0, 0, 0, 0.559) 0px 4px 6px, rgba(0, 0, 0, 0.621) 0px 12px 13px, rgba(0, 0, 0, 0.25) 0px -3px 5px;
+}
+
+/* Bottom starts here */
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: static;
+    color: white;
+    background-color: black;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    box-shadow: rgba(0, 0, 0, 0.845) 0px 54px 55px, rgba(0, 0, 0, 0.559) 0px -12px 30px, rgba(0, 0, 0, 0.559) 0px 4px 6px, rgba(0, 0, 0, 0.621) 0px 12px 13px, rgba(0, 0, 0, 0.25) 0px -3px 5px;
+}
+
+.bottom .icons{
+    margin-top: 1em;
+    cursor: pointer;
+    padding: 0 5em 0 5em;
+}
+
+.bottom .icons #next{
+    padding-left: 0.70em;
+}
+
+.bottom .icons #previous{
+    padding-right: 0.70em;
+}
+
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.songItem img{
+    width: 50px;
+    margin: 0 1em 0 0;
+    border-radius: 15px;
+}
+
+.timeStamp{
+    margin:0 2em;
+}
+
+.songListPlay i{
+    cursor: pointer;
+}
+
+.songItemContainer{
+    margin-top: 2em;
+}
+
+.songInfo{
+    position:absolute;
+    left: 10vw;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+@media screen and (max-width: 600px) {
+    .songInfo{
+        display: none;
+    }
+    }
